@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="start-screen">
+        <img src="excited.gif" alt="Excited">
+    </div>
+    <div id="mode-selection" style="display: none;">
+        <h2>Select Game Mode</h2>
+        <button onclick="startGame('pvp')">Player vs Player</button>
+        <button onclick="startGame('ai')">Player vs AI</button>
+    </div>
+    <div id="game-container" style="display: none;">
+        <div id="upper">
+            <div id="tic"><h1>Tic Tac Toe</h1></div>
+            <div id="msg"><h2 class="info">Player 1</h2></div>
+            <div id="main">
+                <div class="tiles" id="tile-0"></div>
+                <div class="tiles" id="tile-1"></div>
+                <div class="tiles" id="tile-2"></div>
+                <div class="tiles" id="tile-3"></div>
+                <div class="tiles" id="tile-4"></div>
+                <div class="tiles" id="tile-5"></div>
+                <div class="tiles" id="tile-6"></div>
+                <div class="tiles" id="tile-7"></div>
+                <div class="tiles" id="tile-8"></div>
+            </div>
+            <div id="button-container">
+                <button onclick="resetGame()">Try again</button>
+            </div>
+        </div>
+        <div id="win-image">
+            <img src="Congratulations.gif" alt="Congratulations" style="display: none;">
+        </div>
+    </div>    
+    <script src="script.js"></script>
+</body>
+</html>

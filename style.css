@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, #eb3349 0%, #f45c43 100%);
+}
+#start-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#mode-selection {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#game-container {
+    display: none;
+}
+#button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+button {
+    border: none;
+    background-color: black;
+    box-shadow: 0 0 40px black;
+    width: 200px;
+    color: #eb3349;
+    height: 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+button:active {
+    box-shadow: none;
+    height: 48px;
+    width: 195px;
+}
+#main {
+    margin: 0 30%;
+    width: 30%;
+    height: 300px;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    box-shadow: 0 0 40px black;
+}
+#msg {
+    margin-left: 40%;
+    margin-bottom: 20px;
+    width: 130px;
+    height: 50px;
+    padding-top: 50px;
+    text-align: center;
+}
+#tic {
+    margin-top: 10px;
+    margin-left: 39%;
+}
+.tiles {
+    width: 32.3%;
+    height: 83px;
+    text-align: center;
+    padding: 15px 0 0;
+    font-size: 5vw;
+    color: #eb3349;
+}
+.tiles:hover {
+    cursor: pointer;
+}
+#win-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#win-image img {
+    width: 200px;
+    display: none;
+}
